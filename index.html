@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tivo - Ready For You</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Tivo Ready For You</title>
 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -17,116 +18,263 @@ font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
-background:#f4f4f4;
+background:#f2f2f2;
+max-width:430px;
+margin:auto;
 }
 
 .header{
-position:sticky;
-top:0;
-background:#ff9800;
+
+background:linear-gradient(180deg,#ff9800,#ffb347);
+
+height:110px;
+
+padding:20px;
+
 color:#fff;
-padding:18px;
-font-size:22px;
-font-weight:bold;
+
+position:sticky;
+
+top:0;
+
 z-index:999;
+
 }
 
-.container{
+.header h2{
+
+font-size:24px;
+
+font-weight:bold;
+
+}
+
+.help{
+
+position:absolute;
+
+right:15px;
+
+top:18px;
+
+padding:8px 18px;
+
+border:2px solid white;
+
+border-radius:30px;
+
+font-size:18px;
+
+font-weight:bold;
+
+}
+
+.wallet{
+
+background:white;
+
+margin:12px;
+
 padding:15px;
-padding-bottom:90px;
+
+border-radius:16px;
+
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+
 }
 
 .card{
-background:#fff;
+
+background:white;
+
+margin:12px;
+
+padding:15px;
+
 border-radius:18px;
-padding:18px;
-margin-bottom:18px;
-box-shadow:0 3px 10px rgba(0,0,0,.08);
+
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+
 }
 
 .top{
+
 display:flex;
+
 justify-content:space-between;
+
 align-items:center;
+
 }
 
-.loan-name{
-font-size:28px;
-font-weight:bold;
+.left{
+
+display:flex;
+
+align-items:center;
+
 }
 
-.status{
-color:#0b9d3e;
+.left img{
+
+width:44px;
+
+height:44px;
+
+border-radius:12px;
+
+margin-right:12px;
+
+}
+
+.loan{
+
+font-size:18px;
+
 font-weight:bold;
+
 }
 
 .id{
-margin-top:6px;
-font-size:14px;
+
+font-size:12px;
+
+color:#888;
+
+margin-top:3px;
+
+}
+
+.status{
+
+color:#11a84b;
+
+font-size:13px;
+
+font-weight:bold;
+
+}
+
+.label{
+
+margin-top:16px;
+
+font-size:13px;
+
 color:#777;
+
 }
 
 .middle{
+
 display:flex;
+
 justify-content:space-between;
+
 align-items:center;
-margin-top:20px;
+
+margin-top:8px;
+
 }
 
 .amount{
-font-size:42px;
+
+font-size:28px;
+
 font-weight:bold;
+
 color:#ff9800;
+
 }
 
 .old{
-font-size:24px;
-text-decoration:line-through;
-color:#999;
+
 margin-left:8px;
+
+font-size:16px;
+
+text-decoration:line-through;
+
+color:#888;
+
 }
 
-button{
+.repay{
+
 background:#ffb300;
-color:#fff;
-border:none;
-padding:14px 35px;
-border-radius:35px;
-font-size:20px;
-font-weight:bold;
-cursor:pointer;
-}
 
-button:hover{
-background:#ff9800;
+color:white;
+
+border:none;
+
+padding:12px 28px;
+
+border-radius:30px;
+
+font-size:16px;
+
+font-weight:bold;
+
+cursor:pointer;
+
 }
 
 .date{
-margin-top:18px;
-font-size:20px;
+
+margin-top:14px;
+
+font-size:14px;
+
 font-weight:bold;
+
 }
 
 .bottom{
+
 position:fixed;
+
 bottom:0;
-left:0;
+
+left:50%;
+
+transform:translateX(-50%);
+
 width:100%;
+
+max-width:430px;
+
 height:65px;
-background:#fff;
+
+background:white;
+
 display:flex;
+
 justify-content:space-around;
+
 align-items:center;
-box-shadow:0 -2px 10px rgba(0,0,0,.12);
+
+box-shadow:0 -2px 8px rgba(0,0,0,.15);
+
 }
 
-.material-icons{
+.bottom .material-icons{
+
 font-size:32px;
-color:#bbb;
+
+color:#bdbdbd;
+
 }
 
 .active{
-color:#ff9800 !important;
+
+color:#ff9800!important;
+
+}
+
+.space{
+
+height:90px;
+
 }
 
 </style>
@@ -136,128 +284,219 @@ color:#ff9800 !important;
 <body>
 
 <div class="header">
-Tivo, Ready for You
+
+<h2>Tivo, Ready for You</h2>
+
+<div class="help">? Help</div>
+
 </div>
 
-<div class="container">
+<div class="wallet">
+<b>Repayment</b>
+</div>
+<!-- ================= CAPSULE ================= -->
 
 <div class="card">
 
 <div class="top">
+
+<div class="left">
+
+<img src="https://cdn-icons-png.flaticon.com/512/891/891462.png">
+
 <div>
-<div class="loan-name">Capsule</div>
+
+<div class="loan">Capsule</div>
+
 <div class="id">Repayment ID : 28NNBr</div>
+
 </div>
 
-<div class="status">
-Pending Payment
 </div>
+
+<div class="status">Pending Payment</div>
+
 </div>
+
+<div class="label">Loan Amount</div>
 
 <div class="middle">
 
-<div class="amount">
-₹4,319
+<div>
+
+<span class="amount">₹4,319</span>
+
 <span class="old">₹4,500</span>
+
 </div>
 
-<button onclick="repay('capsule')">
+<button class="repay"
+onclick="window.location.href='https://tivoloan5-blip.github.io/tivo-repay/?amount=000&upi=DEMO@1'">
+
 Repay
+
 </button>
 
 </div>
 
 <div class="date">
+
 Due Date : 24-08-2026
+
 </div>
 
 </div>
+
+
+
+<!-- ================= COMET ================= -->
 
 <div class="card">
 
 <div class="top">
+
+<div class="left">
+
+<img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png">
+
 <div>
-<div class="loan-name">Comet</div>
+
+<div class="loan">Comet</div>
+
 <div class="id">Repayment ID : 28NNHM</div>
+
 </div>
 
-<div class="status">
-Pending Payment
 </div>
+
+<div class="status">Pending Payment</div>
+
 </div>
+
+<div class="label">Loan Amount</div>
 
 <div class="middle">
 
-<div class="amount">
-₹3,839
+<div>
+
+<span class="amount">₹3,839</span>
+
 <span class="old">₹4,000</span>
+
 </div>
 
-<button onclick="repay('comet')">
+<button class="repay"
+onclick="window.location.href='https://tivoloan5-blip.github.io/tivo-repay/?amount=000&upi=DEMO@2'">
+
 Repay
+
 </button>
 
 </div>
 
 <div class="date">
+
 Due Date : 24-08-2026
+
 </div>
 
 </div>
+
+
+
+<!-- ================= BUU ================= -->
 
 <div class="card">
 
 <div class="top">
+
+<div class="left">
+
+<img src="https://cdn-icons-png.flaticon.com/512/3081/3081559.png">
+
 <div>
-<div class="loan-name">Buu</div>
+
+<div class="loan">Buu</div>
+
 <div class="id">Repayment ID : 28LPzJ</div>
+
 </div>
 
-<div class="status">
-Pending Payment
 </div>
+
+<div class="status">Pending Payment</div>
+
 </div>
+
+<div class="label">Loan Amount</div>
 
 <div class="middle">
 
-<div class="amount">
-₹5,516
+<div>
+
+<span class="amount">₹5,516</span>
+
 <span class="old">₹5,800</span>
+
 </div>
 
-<button onclick="repay('buu')">
+<button class="repay"
+onclick="window.location.href='https://tivoloan5-blip.github.io/tivo-repay/?amount=000&upi=DEMO@3'">
+
 Repay
+
 </button>
 
 </div>
 
 <div class="date">
+
 Due Date : 22-08-2026
+
 </div>
 
 </div>
+<!-- ================= CAROUSEL ================= -->
+
 <div class="card">
 
 <div class="top">
+
+<div class="left">
+
+<img src="https://cdn-icons-png.flaticon.com/512/847/847969.png">
+
 <div>
-<div class="loan-name">Carousel</div>
+
+<div class="loan">Carousel</div>
+
 <div class="id">Repayment ID : 28LqHm</div>
+
 </div>
 
-<div class="status">
-Pending Payment
 </div>
+
+<div class="status">Pending Payment</div>
+
 </div>
+
+<div class="label">Loan Amount</div>
 
 <div class="middle">
 
-<div class="amount">
-₹3,789
+<div>
+
+<span class="amount">₹3,789</span>
+
 <span class="old">₹4,000</span>
+
 </div>
 
-<button onclick="repay('carousel')">
+<button class="repay"
+onclick="window.location.href='https://tivoloan5-blip.github.io/tivo-repay/?amount=000&upi=DEMO@4'">
+
 Repay
+
 </button>
 
 </div>
@@ -268,28 +507,49 @@ Due Date : 22-08-2026
 
 </div>
 
+
+
+<!-- ================= FLASH ================= -->
+
 <div class="card">
 
 <div class="top">
+
+<div class="left">
+
+<img src="https://cdn-icons-png.flaticon.com/512/565/565547.png">
+
 <div>
-<div class="loan-name">Flash</div>
+
+<div class="loan">Flash</div>
+
 <div class="id">Repayment ID : 28LqPG</div>
+
 </div>
 
-<div class="status">
-Pending Payment
 </div>
+
+<div class="status">Pending Payment</div>
+
 </div>
+
+<div class="label">Loan Amount</div>
 
 <div class="middle">
 
-<div class="amount">
-₹1,869
+<div>
+
+<span class="amount">₹1,869</span>
+
 <span class="old">₹2,000</span>
+
 </div>
 
-<button onclick="repay('flash')">
+<button class="repay"
+onclick="window.location.href='https://tivoloan5-blip.github.io/tivo-repay/?amount=000&upi=DEMO@5'">
+
 Repay
+
 </button>
 
 </div>
@@ -300,55 +560,101 @@ Due Date : 22-08-2026
 
 </div>
 
+
+
+<!-- ================= DEMAND ================= -->
+
 <div class="card">
 
 <div class="top">
+
+<div class="left">
+
+<img src="https://cdn-icons-png.flaticon.com/512/891/891419.png">
+
 <div>
-<div class="loan-name">Demand</div>
+
+<div class="loan">Demand</div>
+
 <div class="id">Repayment ID : 28L6z8</div>
+
 </div>
 
-<div class="status">
-Pending Payment
 </div>
+
+<div class="status">Pending Payment</div>
+
 </div>
+
+<div class="label">Loan Amount</div>
 
 <div class="middle">
 
-<div class="amount">
-₹3,839
+<div>
+
+<span class="amount">₹3,839</span>
+
 <span class="old">₹4,000</span>
+
 </div>
 
-<button onclick="repay('demand')">
+<button class="repay"
+onclick="window.location.href='https://tivoloan5-blip.github.io/tivo-repay/?amount=000&upi=DEMO@6'">
+
 Repay
+
 </button>
+
 </div>
+
 <div class="date">
 Due Date : 21-08-2026
 </div>
 
 </div>
 
+<!-- ================= BUDDY ================= -->
+
 <div class="card">
 
 <div class="top">
+
+<div class="left">
+
+<img src="https://cdn-icons-png.flaticon.com/512/1946/1946429.png">
+
 <div>
-<div class="loan-name">Buddy</div>
+
+<div class="loan">Buddy</div>
+
 <div class="id">Repayment ID : 28BUD7</div>
+
+</div>
+
 </div>
 
 <div class="status">Pending Payment</div>
+
 </div>
+
+<div class="label">Loan Amount</div>
 
 <div class="middle">
 
-<div class="amount">
-₹1,000
+<div>
+
+<span class="amount">₹1,000</span>
+
 <span class="old">₹1,005</span>
+
 </div>
 
-<button onclick="repay('buddy')">Repay</button>
+<button class="repay"
+onclick="window.location.href='https://tivoloan5-blip.github.io/tivo-repay/?amount=000&upi=DEMO@7'">
+
+Repay
+
+</button>
 
 </div>
 
@@ -359,25 +665,49 @@ Due Date : 24-08-2026
 </div>
 
 
+
+<!-- ================= APPLE ================= -->
+
 <div class="card">
 
 <div class="top">
+
+<div class="left">
+
+<img src="https://cdn-icons-png.flaticon.com/512/415/415733.png">
+
 <div>
-<div class="loan-name">Apple</div>
+
+<div class="loan">Apple</div>
+
 <div class="id">Repayment ID : 28APP8</div>
+
+</div>
+
 </div>
 
 <div class="status">Pending Payment</div>
+
 </div>
+
+<div class="label">Loan Amount</div>
 
 <div class="middle">
 
-<div class="amount">
-₹2,000
+<div>
+
+<span class="amount">₹2,000</span>
+
 <span class="old">₹2,005</span>
+
 </div>
 
-<button onclick="repay('apple')">Repay</button>
+<button class="repay"
+onclick="window.location.href='https://tivoloan5-blip.github.io/tivo-repay/?amount=000&upi=DEMO@8'">
+
+Repay
+
+</button>
 
 </div>
 
@@ -388,25 +718,49 @@ Due Date : 24-08-2026
 </div>
 
 
+
+<!-- ================= ORANGE ================= -->
+
 <div class="card">
 
 <div class="top">
+
+<div class="left">
+
+<img src="https://cdn-icons-png.flaticon.com/512/590/590685.png">
+
 <div>
-<div class="loan-name">Orange</div>
+
+<div class="loan">Orange</div>
+
 <div class="id">Repayment ID : 28ORG9</div>
+
+</div>
+
 </div>
 
 <div class="status">Pending Payment</div>
+
 </div>
+
+<div class="label">Loan Amount</div>
 
 <div class="middle">
 
-<div class="amount">
-₹3,000
+<div>
+
+<span class="amount">₹3,000</span>
+
 <span class="old">₹3,005</span>
+
 </div>
 
-<button onclick="repay('orange')">Repay</button>
+<button class="repay"
+onclick="window.location.href='https://tivoloan5-blip.github.io/tivo-repay/?amount=000&upi=DEMO@9'">
+
+Repay
+
+</button>
 
 </div>
 
@@ -416,26 +770,50 @@ Due Date : 24-08-2026
 
 </div>
 
+
+
+<!-- ================= CAR ================= -->
 
 <div class="card">
 
 <div class="top">
+
+<div class="left">
+
+<img src="https://cdn-icons-png.flaticon.com/512/744/744465.png">
+
 <div>
-<div class="loan-name">Car</div>
+
+<div class="loan">Car</div>
+
 <div class="id">Repayment ID : 28CAR10</div>
+
+</div>
+
 </div>
 
 <div class="status">Pending Payment</div>
+
 </div>
+
+<div class="label">Loan Amount</div>
 
 <div class="middle">
 
-<div class="amount">
-₹4,000
+<div>
+
+<span class="amount">₹4,000</span>
+
 <span class="old">₹4,005</span>
+
 </div>
 
-<button onclick="repay('car')">Repay</button>
+<button class="repay"
+onclick="window.location.href='https://tivoloan5-blip.github.io/tivo-repay/?amount=000&upi=DEMO@10'">
+
+Repay
+
+</button>
 
 </div>
 
@@ -445,24 +823,33 @@ Due Date : 24-08-2026
 
 </div>
 
+<!-- ================= BENEFITS ================= -->
 
-<div class="card">
+<div class="wallet">
 
-<h2 style="margin-bottom:15px;">
-All benefits are ready to use:
-</h2>
+<h3 style="margin-bottom:12px;">All Benefits Are Ready To Use</h3>
 
-<ul style="padding-left:20px;line-height:30px;">
-<li>Lucky Gold (₹1–₹2 off)</li>
-<li>Repay 1 day later if disbursed after 5 PM.</li>
-<li>Priority Review and Fast Disbursement Access.</li>
-<li>Get ₹200 off if repaid 3 days early.</li>
-<li>Upgrade your User Level for more discounts.</li>
-</ul>
+<p style="font-size:14px;color:#555;line-height:24px;">
+
+✅ Lucky Gold (₹1-₹2 OFF)<br>
+
+✅ Repay one day later if loan is disbursed after 5 PM.<br>
+
+✅ Priority Review & Fast Disbursement.<br>
+
+✅ Get ₹200 OFF when you repay 3 days early.<br>
+
+✅ Upgrade your User Level to unlock more offers.
+
+</p>
 
 </div>
 
-</div>
+
+<div class="space"></div>
+
+
+<!-- ================= BOTTOM NAVIGATION ================= -->
 
 <div class="bottom">
 
@@ -471,9 +858,8 @@ onclick="window.location.href='index.html'">
 home
 </span>
 
-<span class="material-icons active"
-onclick="window.location.href='index.html'">
-credit_card
+<span class="material-icons active">
+account_balance_wallet
 </span>
 
 <span class="material-icons"
@@ -482,40 +868,6 @@ person
 </span>
 
 </div>
-
-<script>
-
-function repay(type){
-
-const links={
-
-capsule:"https://tivoloan5-blip.github.io/tivo-repay/?amount=000&upi=DEMO@1",
-
-comet:"https://tivoloan5-blip.github.io/tivo-repay/?amount=000&upi=DEMO@2",
-
-buu:"https://tivoloan5-blip.github.io/tivo-repay/?amount=000&upi=DEMO@3",
-
-carousel:"https://tivoloan5-blip.github.io/tivo-repay/?amount=000&upi=DEMO@4",
-
-flash:"https://tivoloan5-blip.github.io/tivo-repay/?amount=000&upi=DEMO@5",
-
-demand:"https://tivoloan5-blip.github.io/tivo-repay/?amount=000&upi=DEMO@6",
-
-buddy:"https://tivoloan5-blip.github.io/tivo-repay/?amount=000&upi=DEMO@7",
-
-apple:"https://tivoloan5-blip.github.io/tivo-repay/?amount=000&upi=DEMO@8",
-
-orange:"https://tivoloan5-blip.github.io/tivo-repay/?amount=000&upi=DEMO@9",
-
-car:"https://tivoloan5-blip.github.io/tivo-repay/?amount=000&upi=DEMO@10"
-
-};
-
-window.location.href=links[type];
-
-}
-
-</script>
 
 </body>
 </html>

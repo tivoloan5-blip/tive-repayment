@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Profile</title>
 
@@ -18,28 +21,26 @@ font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
-background:#f5f5f5;
+
+background:#f3f3f3;
+
+max-width:430px;
+
+margin:auto;
+
 }
 
 .header{
 
-background:linear-gradient(#ff9800,#ff9800,#ffd18b);
+height:240px;
 
-height:270px;
+background:linear-gradient(180deg,#ff9800,#ffb74d);
 
 padding:20px;
 
-color:#fff;
+color:white;
 
 position:relative;
-
-}
-
-.title{
-
-font-size:24px;
-
-font-weight:bold;
 
 }
 
@@ -49,15 +50,15 @@ position:absolute;
 
 right:15px;
 
-top:18px;
+top:15px;
 
-border:2px solid #fff;
+padding:8px 18px;
 
-padding:10px 20px;
+border:2px solid white;
 
-border-radius:30px;
+border-radius:25px;
 
-font-size:22px;
+font-size:16px;
 
 font-weight:bold;
 
@@ -75,43 +76,43 @@ align-items:center;
 
 .profile img{
 
-width:110px;
+width:80px;
 
-height:110px;
+height:80px;
 
 border-radius:50%;
 
-background:#fff;
+background:white;
 
 }
 
 .info{
 
-margin-left:18px;
+margin-left:15px;
 
 }
 
 .name{
 
-font-size:28px;
+font-size:26px;
 
 font-weight:bold;
 
 }
 
-.legend{
+.level{
 
 display:inline-block;
 
-background:#8d22ff;
-
-padding:8px 18px;
-
-border-radius:8px;
-
-font-size:18px;
-
 margin-top:8px;
+
+padding:6px 14px;
+
+background:#8a2be2;
+
+border-radius:20px;
+
+font-size:14px;
 
 }
 
@@ -121,15 +122,15 @@ position:absolute;
 
 right:20px;
 
-top:145px;
+bottom:30px;
 
 border:2px solid white;
 
+padding:8px 18px;
+
 border-radius:30px;
 
-padding:10px 28px;
-
-font-size:22px;
+font-size:16px;
 
 }
 
@@ -141,137 +142,53 @@ display:flex;
 
 justify-content:space-around;
 
-padding:20px 0;
+padding:18px 10px;
+
+}
+
+.stats div{
 
 text-align:center;
 
 }
 
-.stats h2{
+.stats h3{
 
-font-size:18px;
+color:#999;
 
-color:#777;
+font-size:13px;
 
-margin-bottom:10px;
+margin-bottom:6px;
 
 }
 
 .stats p{
 
-font-size:22px;
+font-size:18px;
 
 font-weight:bold;
 
 }
 
-.level{
+.card{
 
-margin:18px;
+margin:14px;
 
-background:linear-gradient(90deg,#7d00d4,#d34dff);
+background:white;
 
 border-radius:18px;
 
-padding:28px;
+padding:18px;
 
-color:white;
+box-shadow:0 2px 8px rgba(0,0,0,.08);
 
-font-size:30px;
+}
+
+.title{
+
+font-size:18px;
 
 font-weight:bold;
-
-}
-
-.menu{
-
-background:white;
-
-margin:18px;
-
-border-radius:15px;
-
-overflow:hidden;
-
-}
-
-.item{
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-padding:24px;
-
-font-size:22px;
-
-font-weight:bold;
-
-border-bottom:1px solid #ddd;
-
-}
-
-.item:last-child{
-
-border:none;
-
-}
-
-.left{
-
-display:flex;
-
-align-items:center;
-
-}
-
-.left span{
-
-color:#ff9800;
-
-font-size:32px;
-
-margin-right:18px;
-
-}
-
-.bottom{
-
-position:fixed;
-
-bottom:0;
-
-left:0;
-
-width:100%;
-
-height:65px;
-
-background:white;
-
-display:flex;
-
-justify-content:space-around;
-
-align-items:center;
-
-box-shadow:0 -2px 8px rgba(0,0,0,.15);
-
-}
-
-.bottom .material-icons{
-
-font-size:34px;
-
-color:#bbb;
-
-}
-
-.active{
-
-color:#ff9800 !important;
 
 }
 
@@ -282,12 +199,6 @@ color:#ff9800 !important;
 <body>
 
 <div class="header">
-
-<div class="title">
-
-Tivo, Ready for You
-
-</div>
 
 <div class="help">
 
@@ -307,7 +218,7 @@ PADM...
 
 </div>
 
-<div class="legend">
+<div class="level">
 
 Legend
 
@@ -329,7 +240,7 @@ Edit
 
 <div>
 
-<h2>Due</h2>
+<h3>Due</h3>
 
 <p>6</p>
 
@@ -337,7 +248,7 @@ Edit
 
 <div>
 
-<h2>Trust</h2>
+<h3>Trust</h3>
 
 <p>21</p>
 
@@ -345,28 +256,54 @@ Edit
 
 <div>
 
-<h2>Limit</h2>
+<h3>Limit</h3>
 
 <p>₹38,900</p>
 
 </div>
 
 </div>
+<!-- ================= LEVEL CARD ================= -->
 
-<div class="level">
+<div class="card" style="background:linear-gradient(90deg,#7b1fa2,#ab47bc);color:white;">
 
-Level Card
+<div style="font-size:22px;font-weight:bold;">
+Legend
+</div>
+
+<div style="margin-top:8px;font-size:14px;">
+Current User Level
+</div>
+
+<div style="margin-top:18px;background:rgba(255,255,255,.25);height:10px;border-radius:20px;overflow:hidden;">
+
+<div style="width:75%;height:10px;background:white;border-radius:20px;"></div>
 
 </div>
-<div class="menu">
 
-<div class="item">
+<div style="margin-top:10px;font-size:13px;">
+75% completed to next level
+</div>
 
-<div class="left">
+</div>
 
-<span class="material-icons">edit</span>
 
-Higher Credit&Lower Fees
+
+<!-- ================= MENU ================= -->
+
+<div class="card">
+
+<div style="display:flex;justify-content:space-between;align-items:center;padding:6px 0;">
+
+<div style="display:flex;align-items:center;">
+
+<span class="material-icons" style="color:#ff9800;font-size:28px;margin-right:12px;">
+trending_up
+</span>
+
+<div class="title">
+Higher Credit & Lower Fees
+</div>
 
 </div>
 
@@ -376,16 +313,20 @@ chevron_right
 
 </div>
 
+<hr style="margin:16px 0;border:none;border-top:1px solid #eee;">
 
-<div class="item">
 
-<div class="left">
+<div style="display:flex;justify-content:space-between;align-items:center;padding:6px 0;">
 
-<span class="material-icons">
+<div style="display:flex;align-items:center;">
+
+<span class="material-icons" style="color:#ff9800;font-size:28px;margin-right:12px;">
 credit_card
 </span>
 
+<div class="title">
 Update Card
+</div>
 
 </div>
 
@@ -395,16 +336,91 @@ chevron_right
 
 </div>
 
+</div>
+<!-- ================= SETTINGS ================= -->
 
-<div class="item">
+<div class="card">
 
-<div class="left">
+<div style="display:flex;justify-content:space-between;align-items:center;padding:6px 0;">
 
-<span class="material-icons">
+<div style="display:flex;align-items:center;">
+
+<span class="material-icons" style="color:#ff9800;font-size:28px;margin-right:12px;">
 settings
 </span>
 
+<div class="title">
 Settings
+</div>
+
+</div>
+
+<span class="material-icons">
+chevron_right
+</span>
+
+</div>
+
+<hr style="margin:16px 0;border:none;border-top:1px solid #eee;">
+
+
+<div style="display:flex;justify-content:space-between;align-items:center;padding:6px 0;">
+
+<div style="display:flex;align-items:center;">
+
+<span class="material-icons" style="color:#ff9800;font-size:28px;margin-right:12px;">
+info
+</span>
+
+<div class="title">
+About Us
+</div>
+
+</div>
+
+<span class="material-icons">
+chevron_right
+</span>
+
+</div>
+
+<hr style="margin:16px 0;border:none;border-top:1px solid #eee;">
+
+
+<div style="display:flex;justify-content:space-between;align-items:center;padding:6px 0;">
+
+<div style="display:flex;align-items:center;">
+
+<span class="material-icons" style="color:#ff9800;font-size:28px;margin-right:12px;">
+support_agent
+</span>
+
+<div class="title">
+Customer Service
+</div>
+
+</div>
+
+<span class="material-icons">
+chevron_right
+</span>
+
+</div>
+
+<hr style="margin:16px 0;border:none;border-top:1px solid #eee;">
+
+
+<div style="display:flex;justify-content:space-between;align-items:center;padding:6px 0;">
+
+<div style="display:flex;align-items:center;">
+
+<span class="material-icons" style="color:#ff9800;font-size:28px;margin-right:12px;">
+logout
+</span>
+
+<div class="title">
+Logout
+</div>
 
 </div>
 
@@ -417,24 +433,45 @@ chevron_right
 </div>
 
 
-<div class="bottom">
+<div style="height:80px;"></div>
+
+
+<!-- ================= BOTTOM NAVIGATION ================= -->
+
+<div style="
+position:fixed;
+bottom:0;
+left:50%;
+transform:translateX(-50%);
+width:100%;
+max-width:430px;
+height:65px;
+background:#fff;
+display:flex;
+justify-content:space-around;
+align-items:center;
+box-shadow:0 -2px 8px rgba(0,0,0,.12);
+">
 
 <span class="material-icons"
+style="font-size:30px;color:#999;cursor:pointer;"
 onclick="window.location.href='index.html'">
 home
 </span>
 
 <span class="material-icons"
+style="font-size:30px;color:#999;cursor:pointer;"
 onclick="window.location.href='index.html'">
-credit_card
+account_balance_wallet
 </span>
 
-<span class="material-icons active">
+<span class="material-icons"
+style="font-size:30px;color:#ff9800;">
 person
 </span>
 
 </div>
 
 </body>
-
 </html>
+

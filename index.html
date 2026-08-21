@@ -51,7 +51,7 @@ font-weight:bold;
 
 }
 
-.help{
+/* .help{
 
 position:absolute;
 
@@ -69,6 +69,33 @@ font-size:18px;
 
 font-weight:bold;
 
+} */
+
+    .help{
+    position:absolute;
+    right:15px;
+    top:18px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:8px 18px;
+    border:2px solid #fff;
+    border-radius:30px;
+    color:#fff;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.help-icon{
+    width:32px;
+    height:32px;
+    background:#fff;
+    color:#f5a623;
+    border-radius:50%;
+    display:flex !important;
+    align-items:center;
+    justify-content:center;
+    font-size:22px !important;
 }
 
 /* .wallet{
@@ -278,8 +305,13 @@ height:90px;
 
 <h2>Tivo, Ready for You</h2>
 
-<div class="help">? Help</div>
+<!-- <div class="help">? Help</div>
 
+</div> -->
+
+    <div class="help">
+    <span class="material-icons help-icon">help_outline</span>
+    Help
 </div>
 
 <!-- <div class="wallet">
